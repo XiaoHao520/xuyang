@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <title>FrozenUI Demo</title>
+    <script src="js/frozen.js"></script>
+    <script src="js/lib/zeptojs/zepto.min.js"></script>
+    <link rel="stylesheet" href="css/frozen.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_498365_zgt10e39p38oajor.css">
+    <style>
+        .banner {
+            width: 100%;
+            height: 200px;
+            background-color: #00aeef;
+        }
+
+        form .ui-row-flex {
+
+            margin-top: 20px;
+            height: 50px;
+            border: solid #00a5e0 1px;
+
+        }
+        form{
+            padding-bottom: 50px;
+        }
+
+        .icon {
+
+            text-align: center;
+            height: 100%;
+            color: white;
+            width: 50px;
+            background-color: #00a5e0;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+
+        .icon i {
+            font-size: 1.5rem;
+        }
+
+        .input {
+            position: relative;
+            height: 100%;
+
+            width: 100%;
+
+            display: flex;
+        }
+
+        .input input {
+            background: none;
+            border: none;
+            padding-left: 10px;
+        }
+
+        .images{
+           text-align: center;
+        }
+        .images li{
+            border: solid #00a5e0 1px;
+            display: inline-block;
+        }
+        .image1 {
+            position: relative;
+            text-align: center;
+            width: 150px;
+            height: 150px;
+           line-height: 150px;
+        }
+
+        .image1 input {
+            position: absolute;
+            top:0;
+            background-color: #00a5e0;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            opacity: 0;
+
+        }
+
+
+        .submit {
+            margin-top: 30px;
+            height: 50px;
+            width: 100%;
+            background-color: #00a5e0;
+           color: white;
+            border: none;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+<div class="ui-container">
+    <div class="banner"></div>
+
+    <div class="ui-row ui-whitespace">
+        <form action="#">
+            <div class="ui-row-flex">
+                <div class="icon"><i class="iconfont icon-yonghu"></i></div>
+                <div class="input"><input type="text" placeholder="请输入您的姓名"></div>
+            </div>
+            <div class="ui-row-flex">
+                <div class="icon"><i class="iconfont icon-phone"></i></div>
+                <div class="input"><input type="text" placeholder="请输入您的联系方式"></div>
+            </div>
+            <div class="ui-row-flex">
+                <div class="icon"><i class="iconfont icon-jianzhu"></i></div>
+                <div class="input"><input type="text" placeholder="请输入您的公司名称"></div>
+            </div>
+            <div class="ui-row-flex">
+                <div class="icon"><i class="iconfont icon-shenfen"></i></div>
+                <div class="input"><input type="text" placeholder="请输入您的职位"></div>
+            </div>
+            <div class="ui-row-flex">
+                <div class="icon"><i class="iconfont icon-eye"></i></div>
+                <div class="input"><input type="text" placeholder="报名观看的场次及时间"></div>
+            </div>
+            <br>
+
+            <span style="color: #00a5e0">生活照</span>
+
+
+            <ul class="images">
+                <li>
+                    <div class="image1">
+                        <span>点击上传图片</span>
+                        <input type="file">
+                    </div>
+                </li>
+                <li>
+                    <div class="image1">
+                        <span>点击上传图片</span>
+                        <input type="file">
+                    </div>
+                </li>
+            </ul>
+
+
+            <input class="submit" type="submit" value="提交信息">
+        </form>
+    </div>
+</div>
+</body>
+</html>
